@@ -6,6 +6,11 @@
 pool:
   vmImage: 'macOS 10.13'
 
+variables:
+  scheme: ''
+  sdk: 'iphoneos'
+  configuration: 'Debug'
+
 steps:
 - task: Xcode@5
   inputs:
