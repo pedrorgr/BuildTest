@@ -7,7 +7,7 @@ pool:
   vmImage: 'macOS 10.13'
 
 variables:
-  scheme: ''
+  scheme: 'BuildTest'
   sdk: 'iphoneos'
   configuration: 'Debug'
 
