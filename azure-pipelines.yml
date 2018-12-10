@@ -14,4 +14,5 @@ steps:
     sdk: 'iphoneos'
     configuration: 'Release'
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
-    xcodeVersion: '10' # Options: 8, 9, default, specifyPath
+    xcodeVersion: 'Xcode 10' # Options: 8, 9, default, specifyPath
+    xcodeDeveloperDir: 'XCODE_10_DEVELOPER_DIR=/Applications/Xcode_10.0.0.app/Contents/Developer'
