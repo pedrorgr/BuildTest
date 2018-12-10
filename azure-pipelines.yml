@@ -17,7 +17,7 @@ steps:
     actions: 'build'
     scheme: ''
     sdk: 'iphoneos'
-    configuration: 'Release'
+    configuration: 'Debug'
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
     xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
 
@@ -25,8 +25,8 @@ steps:
 # Install an Apple certificate required to build on a macOS agent
 - task: InstallAppleCertificate@2
   inputs:
-    certSecureFile: 
-    #certPwd: # Optional
+    certSecureFile: 'ola.p12'
+    certPwd: testtest
     #keychain: 'temp' # Options: default, temp, custom
     #keychainPassword: # Required when keychain == Custom || Keychain == Default
     #customKeychainPath: # Required when keychain == Custom
@@ -34,5 +34,5 @@ steps:
     #deleteCustomKeychain: # Optional
     #signingIdentity: # Optional
 
-- task: CocoaPods@0
-  displayName: 'pod install using the CocoaPods task with defaults'
+#
+#  displayName: 'pod install using the CocoaPods task with defaults'
